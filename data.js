@@ -88,5 +88,245 @@ const cards = [
       "Fue la primera mujer en programar un videojuego"
     ],
     correctIndex: 2
+  },
+  {
+    name: "Carol Shaw",
+    img: "assets/carol.jpg",
+    year: "1978",
+    country: "Estados Unidos",
+    area: "Videojuegos",
+    contribution: "Primera mujer diseñadora de videojuegos.",
+    options: [
+      "Diseñó el videojuego Pac-Man",
+      "Fue pionera en la industria de la animación",
+      "Creó el videojuego River Raid",
+      "Inventó el joystick"
+    ],
+    correctIndex: 2
+  },
+  {
+    name: "Frances Allen",
+    img: "assets/frances.jpg",
+    year: "2006",
+    country: "Estados Unidos",
+    area: "Computación",
+    contribution: "Primera mujer en ganar el Premio Turing por sus contribuciones a la optimización de compiladores.",
+    options: [
+      "Desarrolló el lenguaje Python",
+      "Ganó el Premio Turing por optimización de compiladores",
+      "Inventó el lenguaje Java",
+      "Creó el primer sistema operativo"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Joan Clarke",
+    img: "assets/joan.jpg",
+    year: "1940s",
+    country: "Reino Unido",
+    area: "Criptografía",
+    contribution: "Jugó un papel clave en la ruptura del código Enigma durante la Segunda Guerra Mundial.",
+    options: [
+      "Descifró el código Morse",
+      "Fue la primera mujer en la NSA",
+      "Inventó la máquina Enigma",
+      "Rompió el código Enigma"
+    ],
+    correctIndex: 3
+  },
+  {
+    name: "Rosalind Franklin",
+    img: "assets/rosalind.jpg",
+    year: "1953",
+    country: "Reino Unido",
+    area: "Biología",
+    contribution: "Contribuyó al descubrimiento de la estructura del ADN.",
+    options: [
+      "Contribuyó al descubrimiento del ADN",
+      "Descubrió la penicilina",
+      "Inventó la PCR",
+      "Fue pionera en la genética"
+    ],
+    correctIndex: 0
+  },
+  {
+    name: "Gerty Cori",
+    img: "assets/gerty.jpg",
+    year: "1947",
+    country: "Estados Unidos",
+    area: "Bioquímica",
+    contribution: "Primera mujer en ganar el Nobel de Medicina por su trabajo en el metabolismo de carbohidratos.",
+    options: [
+      "Descubrió la insulina",
+      "Ganó el Nobel por el metabolismo de carbohidratos",
+      "Inventó la vacuna contra la polio",
+      "Fue pionera en la biotecnología"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Chien-Shiung Wu",
+    img: "assets/wu.jpg",
+    year: "1956",
+    country: "China / Estados Unidos",
+    area: "Física",
+    contribution: "Demostró la violación de la paridad en la física nuclear.",
+    options: [
+      "Inventó el microscopio electrónico",
+      "Demostró la violación de la paridad",
+      "Descubrió la radiactividad",
+      "Fue pionera en la física cuántica"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Florence Nightingale",
+    img: "assets/florence.jpg",
+    year: "1860",
+    country: "Reino Unido",
+    area: "Enfermería",
+    contribution: "Fundadora de la enfermería moderna.",
+    options: [
+      "Descubrió la penicilina",
+      "Fue la primera médica",
+      "Inventó el estetoscopio",
+      "Fundó la enfermería moderna"
+    ],
+    correctIndex: 3
+  },
+  {
+    name: "Barbara McClintock",
+    img: "assets/barbara.jpg",
+    year: "1950",
+    country: "Estados Unidos",
+    area: "Genética",
+    contribution: "Descubrió los elementos genéticos móviles.",
+    options: [
+      "Descubrió la estructura del ADN",
+      "Inventó la PCR",
+      "Descubrió los elementos genéticos móviles",
+      "Fue pionera en la biotecnología"
+    ],
+    correctIndex: 2
+  },
+  {
+    name: "Malala Yousafzai",
+    img: "assets/malala.jpg",
+    year: "2014",
+    country: "Pakistán",
+    area: "Derechos Humanos",
+    contribution: "Ganó el Premio Nobel de la Paz por su lucha por la educación de las niñas.",
+    options: [
+      "Fundó una universidad",
+      "Ganó el Nobel por la educación de las niñas",
+      "Fue la primera mujer presidenta de Pakistán",
+      "Inventó un sistema educativo"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Rosa Parks",
+    img: "assets/rosa.jpg",
+    year: "1955",
+    country: "Estados Unidos",
+    area: "Derechos Civiles",
+    contribution: "Figura clave en el movimiento por los derechos civiles en Estados Unidos.",
+    options: [
+      "Lideró la marcha sobre Washington",
+      "Fue la primera mujer en el Congreso",
+      "Fundó el movimiento de derechos civiles",
+      "Se negó a ceder su asiento a un hombre blanco en un autobús segregado"
+    ],
+    correctIndex: 3
+  },
+  {
+    name: "Teresa de Calcuta",
+    img: "assets/teresa.jpg",
+    year: "1979",
+    country: "Macedonia/India ",
+    area: "Caridad",
+    contribution: "Ganó el Premio Nobel de la Paz por su labor humanitaria.",
+    options: [
+      "Fundó la Cruz Roja",
+      "Ganó el Nobel por su labor humanitaria",
+      "Fue la primera mujer en la ONU",
+      "Inventó un sistema de ayuda social en China"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Ruth Bader Ginsburg",
+    img: "assets/ruth.jpg",
+    year: "1993",
+    country: "Estados Unidos",
+    area: "Derecho",
+    contribution: "Primera mujer en la Corte Suprema de Estados Unidos.",
+    options: [
+      "Fue la primera presidenta de Estados Unidos",
+      "Lideró el movimiento por los derechos civiles",
+      "Primera mujer en la Corte Suprema",
+      "Fundó el movimiento feminista"
+    ],
+    correctIndex: 2
+  },
+  {
+    name: "Rigoberta Menchú",
+    img: "assets/rigoberta.jpg",
+    year: "1992",
+    country: "Guatemala",
+    area: "Derechos Humanos",
+    contribution: "Ganó el Premio Nobel de la Paz por su lucha por los derechos indígenas.",
+    options: [
+      "Ganó el Nobel por los derechos indígenas",
+      "Fundó una organización indígena",
+      "Fue la primera presidenta de Guatemala",
+      "Inventó un sistema de justicia"
+    ],
+    correctIndex: 0
+  },
+  {
+    name: "Angela Davis",
+    img: "assets/angela.jpg",
+    year: "1970s",
+    country: "Estados Unidos",
+    area: "Derechos Civiles",
+    contribution: "Activista por los derechos civiles y feminista.",
+    options: [
+      "Fundó el movimiento feminista",
+      "Lideró el movimiento por los derechos civiles",
+      "Fue pionera en la educación de mujeres",
+      "Escribió libros sobre justicia social"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Frida Kahlo",
+    img: "assets/frida.jpg",
+    year: "1930s",
+    country: "México",
+    area: "Arte",
+    contribution: "Reconocida por sus icónicas pinturas y su influencia en el arte moderno.",
+    options: [
+      "Fundó el movimiento surrealista",
+      "Pintó obras icónicas como 'Las dos Fridas'",
+      "Fue la primera mujer en exponer en el Louvre",
+      "Inventó el arte moderno"
+    ],
+    correctIndex: 1
+  },
+  {
+    name: "Amelia Earhart",
+    img: "assets/amelia.jpg",
+    year: "1932",
+    country: "Estados Unidos",
+    area: "Aviación",
+    contribution: "Primera mujer en cruzar el Atlántico en avión.",
+    options: [
+      "Inventó el avión",
+      "Fue la primera mujer piloto",
+      "Cruzó el Atlántico en avión",
+      "Fundó la aviación moderna"
+    ],
+    correctIndex: 2
   }
 ];

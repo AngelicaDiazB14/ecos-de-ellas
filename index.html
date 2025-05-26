@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecos de Ellas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bg-music" src="assets/game-music-puzzle.mp3" loop></audio>
+  <button id="toggle-music" onclick="toggleMusic()">🔊 Pausar música</button>
+
+  <div id="start-screen">
+    <h1>Ecos de Ellas</h1>
+    <p>Un juego para descubrir las contribuciones de mujeres influyentes en la historia.</p>
+    <input type="text" id="player-name" placeholder="Escribe tu nombre">
+    <button onclick="startGame()">Jugar</button>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div class="card-container">
+      <div class="card" id="card">
+        <div class="front" id="front">
+          <img id="front-img" src="" alt="Imagen mujer" />
+          <h2 id="front-name"></h2>
+          <div id="options"></div>
+          <p id="feedback"></p>
+        </div>
+        <div class="back" id="back">
+          <div class="year-badge" id="back-year-badge"></div>
+          <img id="back-img" src="" alt="Imagen mujer" />
+          <p><strong>País:</strong> <span id="country"></span></p>
+          <p><strong>Área:</strong> <span id="area"></span></p>
+          <p id="contribution"></p>
+          <button onclick="nextCard()">Siguiente</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h2 id="result-text"></h2>
+    <button onclick="restartGame()">Jugar de nuevo</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

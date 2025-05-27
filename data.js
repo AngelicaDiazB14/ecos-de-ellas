@@ -29,6 +29,21 @@ const cards = [
     ],
     correctIndex: 1
   },
+    {
+    name: "Raymonde de Laroche",
+    img: "assets/laroche.jpg", 
+    year: "1910",
+    country: "Francia",
+    area: "Aviación",
+    contribution: "Primera mujer en el mundo en obtener una licencia oficial de piloto.",
+    options: [
+      "Diseñó el primer dirigible para pasajeros",
+      "Fundó la primera escuela de vuelo en Europa",
+      "Primera mujer en obtener una licencia oficial de piloto",
+      "Comandó un escuadrón aéreo durante la Primera Guerra Mundial"
+    ],
+    correctIndex: 2
+  },
   {
     name: "Marie Curie",
     img: "assets/curie.jpg",
@@ -125,15 +140,16 @@ const cards = [
     year: "1940s",
     country: "Reino Unido",
     area: "Criptografía",
-    contribution: "Jugó un papel clave en la ruptura del código Enigma durante la Segunda Guerra Mundial.",
+    contribution: "Destacada criptógrafa británica que contribuyó decisivamente al descifrado del código Enigma, acortando la Segunda Guerra Mundial.",
     options: [
-      "Descifró el código Morse",
-      "Fue la primera mujer en la NSA",
-      "Inventó la máquina Enigma",
-      "Rompió el código Enigma"
+      "Descifró mensajes interceptados en código Morse",
+      "Fue la primera mujer analista en la inteligencia estadounidense",
+      "Diseñó una versión mejorada de la máquina Enigma",
+      "Formó parte del equipo que descifró el código Enigma en Bletchley Park"
     ],
     correctIndex: 3
   },
+
   {
     name: "Rosalind Franklin",
     img: "assets/rosalind.jpg",
@@ -230,12 +246,12 @@ const cards = [
     year: "1955",
     country: "Estados Unidos",
     area: "Derechos Civiles",
-    contribution: "Figura clave en el movimiento por los derechos civiles en Estados Unidos.",
+    contribution: "Figura emblemática cuyo acto de resistencia pacífica impulsó el movimiento por los derechos civiles en EE. UU.",
     options: [
       "Lideró la marcha sobre Washington",
       "Fue la primera mujer en el Congreso",
-      "Fundó el movimiento de derechos civiles",
-      "Se negó a ceder su asiento a un hombre blanco en un autobús segregado"
+      "Primera mujer afroamericana en ocupar un cargo federal",
+      "Impulsó el movimiento por los derechos civiles en EE. UU"
     ],
     correctIndex: 3
   },
@@ -305,10 +321,10 @@ const cards = [
     year: "1930s",
     country: "México",
     area: "Arte",
-    contribution: "Reconocida por sus icónicas pinturas y su influencia en el arte moderno.",
+    contribution: "Reconocida por sus icónicas pinturas y su influencia en el arte moderno. Transformó el dolor físico y emocional en arte simbólico e identitario",
     options: [
       "Fundó el movimiento surrealista",
-      "Pintó obras icónicas como 'Las dos Fridas'",
+      "Transformó el dolor físico y emocional en arte simbólico e identitario",
       "Fue la primera mujer en exponer en el Louvre",
       "Inventó el arte moderno"
     ],
@@ -329,4 +345,5 @@ const cards = [
     ],
     correctIndex: 2
   }
+
 ];

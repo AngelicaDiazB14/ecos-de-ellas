@@ -505,11 +505,11 @@ button {
 
   .front img,
   .back img {
-    max-width: 90%;
+    max-width: 40%;
     min-width: unset;
     height: auto;
-    min-height: 200px;
-    max-height: 200px;
+    min-height: 40%;
+    max-height: 40%;
   }
   #toggle-music {
     font-size: 0.9em;

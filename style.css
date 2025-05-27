@@ -63,13 +63,15 @@ h1, h2 {
 }
 
 .front img, .back img {
-  width: 320px;
-  height: 300px;
+  max-width: 360px;
+  min-width: 350px;
+  min-height: 300px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
   background-color: #fffbe0;
   border: 2px solid #814c00;
-  margin-bottom: 16px;
+  margin-bottom: 2px;
 }
 
 
@@ -280,7 +282,7 @@ button {
 
 #feedback {
   font-weight: bold;
-  margin-top: 16px;
+  margin-top: 46px;
   font-size: 1.2em;
   padding: 10px 20px;
   border-radius: 10px;

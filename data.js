@@ -5,7 +5,7 @@ const cards = [
     year: "1843",
     country: "Reino Unido",
     area: "Tecnología",
-    contribution: "Escribió el primer algoritmo para una máquina.",
+    contribution: "Escribió el primer algoritmo para la máquina analítica de Babbage.",
     options: [
       "Desarrolló el primer compilador",
       "Fue pionera en física cuántica",
@@ -95,7 +95,7 @@ const cards = [
     year: "1978",
     country: "Estados Unidos",
     area: "Videojuegos",
-    contribution: "Primera mujer diseñadora de videojuegos.",
+    contribution: "Primera mujer diseñadora de videojuegos, creó River Raid.",
     options: [
       "Diseñó el videojuego Pac-Man",
       "Fue pionera en la industria de la animación",

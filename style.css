@@ -488,6 +488,9 @@ button {
 
 /*  OPTIMIZACIÓN EXTRA para pantallas muy pequeñas */
 @media screen and (max-width: 400px) {
+    #start-screen, #result-screen {
+    margin-top: 120px;
+  }
    .card-container {
     margin-top: 70px;
     width: 60%;
@@ -499,16 +502,15 @@ button {
     min-height: 580px;
     max-height: 580px;
   }
+
   .front img,
   .back img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #814c00;
-    margin-bottom: 10px;
+    max-width: 40%;
+    min-width: 40%;
+    height: 40%;
+    min-height: 40%;
+    max-height: 40%;
   }
-
   #toggle-music {
     font-size: 0.9em;
     padding: 8px 5px;
@@ -526,8 +528,7 @@ button {
   button {
     font-size: 0.95em;
   }
-
-  #options button {
+    #options button {
     font-size: 0.7em;
     padding: 5px 15px;
   }

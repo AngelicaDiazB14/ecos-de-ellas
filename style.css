@@ -486,6 +486,7 @@ button {
   }
 }
 
+
 /*  OPTIMIZACIÓN EXTRA para pantallas muy pequeñas */
 @media screen and (max-width: 400px) {
     #start-screen, #result-screen {

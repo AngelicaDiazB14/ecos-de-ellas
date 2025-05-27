@@ -508,8 +508,8 @@ button {
     max-width: 90%;
     min-width: unset;
     height: auto;
-    min-height: 270px;
-    max-height: 50px;
+    min-height: 250px;
+    max-height: 250px;
   }
   #toggle-music {
     font-size: 0.9em;

@@ -488,10 +488,9 @@ button {
 
 /*  OPTIMIZACIÓN EXTRA para pantallas muy pequeñas */
 @media screen and (max-width: 400px) {
-  .card-container {
+   .card-container {
     margin-top: 70px;
-    width: 100%;
-    max-width: 480px; /* evita que se haga exageradamente ancha */
+    width: 60%;
     max-height: fit-content;
   }
 
@@ -499,9 +498,7 @@ button {
     height: auto;
     min-height: 580px;
     max-height: 580px;
-    box-sizing: border-box;
   }
-
   .front img,
   .back img {
     width: 100%;

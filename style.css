@@ -506,8 +506,8 @@ button {
   .front img,
   .back img {
     max-width: 40%;
-    min-width: unset;
-    height: auto;
+    min-width: 40%;
+    height: 40%;
     min-height: 40%;
     max-height: 40%;
   }

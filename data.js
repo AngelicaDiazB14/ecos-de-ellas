@@ -151,7 +151,7 @@ const cards = [
   },
   {
     name: "Gerty Cori",
-    img: "assets/gerty.jpg",
+    img: "assets/gerty.jpeg",
     year: "1947",
     country: "Estados Unidos",
     area: "Bioquímica",

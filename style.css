@@ -339,7 +339,7 @@ button {
 
 @media screen and (max-width: 800px) {
 
-     #start-screen, #result-screen {
+    #start-screen, #result-screen {
     margin-top: 120px;
   }
    .card-container {
@@ -396,7 +396,7 @@ button {
   }
    .card-container {
     margin-top: 60px;
-    width: 60%;
+    width: 50%;
     max-height: fit-content;
   }
 
@@ -490,8 +490,8 @@ button {
 @media screen and (max-width: 400px) {
   .card-container {
     margin-top: 70px;
-    width: 90%;
-    max-width: 380px; /* evita que se haga exageradamente ancha */
+    width: 100%;
+    max-width: 480px; /* evita que se haga exageradamente ancha */
     max-height: fit-content;
   }
 

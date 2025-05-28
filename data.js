@@ -4,7 +4,7 @@ const cards = [
     img: "assets/ada.jpg",
     year: "1843",
     country: "Reino Unido",
-    area: "Tecnología",
+    area: "Computación",
     contribution: "Escribió el primer algoritmo para la máquina analítica de Babbage.",
     options: [
       "Desarrolló el primer compilador",
@@ -35,7 +35,7 @@ const cards = [
     year: "1910",
     country: "Francia",
     area: "Aviación",
-    contribution: "Primera mujer en el mundo en obtener una licencia oficial de piloto.",
+    contribution: "Primera mujer en el mundo en obtener una licencia oficial de piloto, abriendo camino para la participación femenina en la aviación.",
     options: [
       "Diseñó el primer dirigible para pasajeros",
       "Fundó la primera escuela de vuelo en Europa",
@@ -246,12 +246,12 @@ const cards = [
     year: "1955",
     country: "Estados Unidos",
     area: "Derechos Civiles",
-    contribution: "Figura emblemática cuyo acto de resistencia pacífica impulsó el movimiento por los derechos civiles en EE. UU.",
+    contribution: "Figura emblemática cuyo acto de resistencia pacífica impulsó el movimiento por los derechos civiles en Estados Unidos.",
     options: [
       "Lideró la marcha sobre Washington",
       "Fue la primera mujer en el Congreso",
       "Primera mujer afroamericana en ocupar un cargo federal",
-      "Impulsó el movimiento por los derechos civiles en EE. UU"
+      "Impulsó el movimiento por los derechos civiles en Estados Unidos"
     ],
     correctIndex: 3
   },
@@ -259,7 +259,7 @@ const cards = [
     name: "Teresa de Calcuta",
     img: "assets/teresa.jpg",
     year: "1979",
-    country: "Macedonia/India ",
+    country: "Macedonia / India",
     area: "Caridad",
     contribution: "Ganó el Premio Nobel de la Paz por su labor humanitaria.",
     options: [
@@ -321,7 +321,7 @@ const cards = [
     year: "1930s",
     country: "México",
     area: "Arte",
-    contribution: "Reconocida por sus icónicas pinturas y su influencia en el arte moderno. Transformó el dolor físico y emocional en arte simbólico e identitario",
+    contribution: "Reconocida por sus icónicas pinturas y su influencia en el arte moderno. Transformó el dolor físico y emocional en arte simbólico e identitario.",
     options: [
       "Fundó el movimiento surrealista",
       "Transformó el dolor físico y emocional en arte simbólico e identitario",

@@ -1,4 +1,4 @@
-
+let answeredCorrectly = [];
 let current = 0;
 let score = 0;
 let player = "";
@@ -42,13 +42,17 @@ function evaluateAnswer(selected, correct) {
   buttons.forEach(btn => btn.disabled = true);
 
   let message = "";
-  if (selected === correct) {
-    message = `✅ <strong>¡Correcto!`;
+  const isCorrect = selected === correct;
+
+  answeredCorrectly[current] = isCorrect;
+
+  if (isCorrect) {
+    message = `✅ <strong>¡Correcto!</strong>`;
     score++;
     playSound("correct");
   } else {
     const correctText = cards[current].options[correct];
-    message = `❌ <strong>¡Incorrecto!</strong> <br>La respuesta correcta es:<br><br>"${correctText}"`;
+    message = `❌ <strong>¡Incorrecto!</strong><br>La respuesta correcta es:<br><br>"${correctText}"`;
     playSound("wrong");
   }
 
@@ -58,6 +62,7 @@ function evaluateAnswer(selected, correct) {
     document.getElementById("card").classList.add("flipped");
   }, 1000);
 }
+
 
 
 function nextCard() {
@@ -73,19 +78,30 @@ function showResult() {
   document.getElementById("game-container").classList.add("hidden");
   document.getElementById("result-screen").classList.remove("hidden");
 
-  let mensaje = "";
   const total = cards.length;
+  const nota = ((score / total) * 100).toFixed(1);
 
-  if (score === total) {
-    mensaje = `🎉 ¡Felicidades, ${player}! Acertaste ${score} de ${total}. ¡Eres una estrella del conocimiento!`;
-  } else if (score >= Math.ceil(total * 0.7)) {
-    mensaje = `👏 ¡Bien hecho, ${player}! Acertaste ${score} de ${total}. ¡Buen trabajo!`;
-  } else {
-    mensaje = `😕 ¡Ánimo, ${player}! Solo acertaste ${score} de ${total}. Pero lo importante es aprender. ¡Sigue intentándolo!`;
-  }
+  const mensaje = `
+    <h2>🎉 ¡Gracias por jugar, <strong>${player}</strong>!</h2>
+    <p>✅ Acertaste <strong>${score}</strong> de <strong>${total}</strong> preguntas.</p>
+    <p>📊 Tu nota final es: <strong>${nota}/100</strong>.</p>
+    <p style="margin-top: 30px;">
+      🙏 Gracias por participar. Si llegaste hasta aquí, ¿podrías ayudarnos respondiendo una breve encuesta sobre el juego?
+    </p>
+    <p style="font-size: 0.7em; margin-top: 10px; color: #ffd700;">
+      🧠 Esta encuesta forma parte de un <strong>Experimento Social</strong> del curso <strong>Computación y Sociedad</strong>.
+      Tu opinión nos sería de gran ayuda para fines académicos.
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfYj_As6zA58wz5mSlN9-7pUgF24QrR9crHz2wIbHShWYlrfw/viewform?usp=sharing&ouid=104709913440561032177" 
+       target="_blank" 
+       style="display:inline-block; margin-top: 10px; background-color: #d89e00; padding: 12px 20px; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">
+      📋 Ir a la encuesta
+    </a>
+  `;
 
-  document.getElementById("result-text").textContent = mensaje;
+  document.getElementById("result-text").innerHTML = mensaje;
 }
+
 
 
 function restartGame() {

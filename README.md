@@ -24,7 +24,7 @@ Puedes jugarlo en línea accediendo al siguiente enlace:
 - **index.html**: Página principal del juego. Contiene la estructura HTML para la interfaz.
 - **style.css**: Hoja de estilos que define la apariencia visual del juego, incluyendo responsividad para móviles.
 - **script.js**: Lógica del juego: controla la navegación entre cartas, evaluación de respuestas, efectos sonoros y resultados.
-- **data.js**: Contiene el conjunto de cartas utilizadas en el juego, cada una con nombre, imagen, año, país, área, contribución y opciones de respuesta.
+- **data.js**: Contiene la información que se utiliza para rellenar dinámicamente las cartas del juego. Cada objeto incluye nombre, imagen, año, país, área, una breve contribución y opciones múltiples con su índice correcto.
 - **README.md**: Documento con la descripción general del proyecto, autores e instrucciones de uso.
 
 

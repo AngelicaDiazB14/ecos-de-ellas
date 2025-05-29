@@ -26,23 +26,29 @@
           <div id="options"></div>
           <p id="feedback"></p>
         </div>
-        <div class="back" id="back">
+      <div class="back" id="back">
           <div class="year-badge" id="back-year-badge"></div>
           <img id="back-img" src="" alt="Imagen mujer" />
           <p><strong>País:</strong> <span id="country"></span></p>
           <p><strong>Área:</strong> <span id="area"></span></p>
           <p id="contribution"></p>
-          <button onclick="nextCard()">Siguiente</button>
-        </div>
+
+          <div class="next-button-container">
+            <button onclick="nextCard()">Siguiente</button>
+          </div>
+      </div>
+
       </div>
     </div>
   </div>
-
   <div id="result-screen" class="hidden">
     <h2 id="result-text"></h2>
     <button onclick="restartGame()">Jugar de nuevo</button>
   </div>
-
+  <div id="message-box" class="hidden">
+    <p id="message-text"></p>
+    <button onclick="closeMessage()">Cerrar</button>
+  </div>
   <script src="data.js"></script>
   <script src="script.js"></script>
 </body>

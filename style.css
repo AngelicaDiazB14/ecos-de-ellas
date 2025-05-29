@@ -219,16 +219,6 @@ button {
 #start-screen button:hover {
   background-color: #b37b00;
 }
-#feedback {
-  font-weight: bold;
-  margin-top: 41px;
-  font-size: 1.0em;
-  padding: 10px 10px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,0.85);
-  color: #333;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
 
 
 #result-screen {
@@ -323,22 +313,6 @@ button {
   background-color: #6a3f00;
 }
 
-
-#feedback {
-  font-weight: bold;
-  margin-top: 46px;
-  font-size: 1.2em;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: rgba(255,255,255,0.85);
-  color: #333;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-  #feedback {
-  font-weight: bold;
-  margin-top: 85px;
-  }
-
 }
 
 @media screen and (max-width: 680px) {
@@ -385,10 +359,6 @@ button {
     #options button {
     font-size: 0.7em;
     padding: 5px 15px;
-  }
-    #feedback {
-  font-weight: bold;
-  margin-top: 85px;
   }
 }
 
@@ -440,10 +410,73 @@ button {
     padding: 5px 15px;
   }
 
+}
 
-  #feedback {
+
+#message-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffbe0;
+  border: 4px solid #814c00;
+  padding: 30px;
+  z-index: 2000;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+#message-box p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#message-box button {
+  padding: 10px 20px;
+  background-color: #814c00;
+  color: white;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
-  margin-top: 85px;
-  }
+  cursor: pointer;
+}
 
+
+.back {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 80px; /* espacio para el botón */
+  position: relative;
+}
+
+.next-button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  display: flex;
+  justify-content: center;
+}
+
+.next-button-container button {
+  padding: 12px 28px;
+  font-size: 1.1em;
+  background-color: #d89e00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+.next-button-container button:hover {
+  background-color: #b37b00;
 }

@@ -38,25 +38,27 @@ function renderCard(index) {
 }
 
 function evaluateAnswer(selected, correct) {
-  const feedback = document.getElementById("feedback");
   const buttons = document.querySelectorAll("#options button");
   buttons.forEach(btn => btn.disabled = true);
 
+  let message = "";
   if (selected === correct) {
-    feedback.textContent = "✅ ¡Correcto!";
-    feedback.style.color = "green";
+    message = `✅ <strong>¡Correcto!`;
     score++;
     playSound("correct");
   } else {
-    feedback.textContent = "❌ Incorrecto.";
-    feedback.style.color = "red";
+    const correctText = cards[current].options[correct];
+    message = `❌ <strong>¡Incorrecto!</strong> <br>La respuesta correcta es:<br><br>"${correctText}"`;
     playSound("wrong");
   }
+
+  showMessage(message);
 
   setTimeout(() => {
     document.getElementById("card").classList.add("flipped");
   }, 1000);
 }
+
 
 function nextCard() {
   current++;
@@ -75,7 +77,7 @@ function showResult() {
   const total = cards.length;
 
   if (score === total) {
-    mensaje = `🎉 ¡Felicidades, ${player}! Respondiste TODO correctamente. ¡Eres una estrella del conocimiento!`;
+    mensaje = `🎉 ¡Felicidades, ${player}! Acertaste ${score} de ${total}. ¡Eres una estrella del conocimiento!`;
   } else if (score >= Math.ceil(total * 0.7)) {
     mensaje = `👏 ¡Bien hecho, ${player}! Acertaste ${score} de ${total}. ¡Buen trabajo!`;
   } else {
@@ -121,3 +123,15 @@ function toggleMusic() {
 }
 
 
+function showMessage(text) {
+  const box = document.getElementById("message-box");
+  const messageText = document.getElementById("message-text");
+  messageText.innerHTML = text; // <-- usar innerHTML para interpretar etiquetas
+  box.classList.remove("hidden");
+}
+
+
+function closeMessage() {
+  const box = document.getElementById("message-box");
+  box.classList.add("hidden");
+}
